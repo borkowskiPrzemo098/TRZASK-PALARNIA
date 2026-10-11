@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T12:21:59.978Z",
+  "title": "Design System: TRZASK palarnia",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Roast-Black Ink",
+        "canonical": "#17120f",
+        "oklch": "oklch(18.7% 0.01 52.8)",
+        "tonalRamp": [
+          "oklch(15% 0.01 52.8)",
+          "oklch(25% 0.01 52.8)",
+          "oklch(36% 0.01 52.8)",
+          "oklch(48% 0.01 52.8)",
+          "oklch(60% 0.01 52.8)",
+          "oklch(72% 0.01 52.8)",
+          "oklch(84% 0.004 52.8)",
+          "oklch(95% 0.004 52.8)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#4a403a",
+        "oklch": "oklch(38% 0.017 52.9)",
+        "tonalRamp": [
+          "oklch(15% 0.017 52.9)",
+          "oklch(25% 0.017 52.9)",
+          "oklch(36% 0.017 52.9)",
+          "oklch(48% 0.017 52.9)",
+          "oklch(60% 0.017 52.9)",
+          "oklch(72% 0.017 52.9)",
+          "oklch(84% 0.006 52.9)",
+          "oklch(95% 0.006 52.9)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#6f6560",
+        "oklch": "oklch(51.5% 0.015 48.4)",
+        "tonalRamp": [
+          "oklch(15% 0.015 48.4)",
+          "oklch(25% 0.015 48.4)",
+          "oklch(36% 0.015 48.4)",
+          "oklch(48% 0.015 48.4)",
+          "oklch(60% 0.015 48.4)",
+          "oklch(72% 0.015 48.4)",
+          "oklch(84% 0.005 48.4)",
+          "oklch(95% 0.005 48.4)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Bag Stock White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100% 0 89.9)",
+        "tonalRamp": [
+          "oklch(15% 0 89.9)",
+          "oklch(25% 0 89.9)",
+          "oklch(36% 0 89.9)",
+          "oklch(48% 0 89.9)",
+          "oklch(60% 0 89.9)",
+          "oklch(72% 0 89.9)",
+          "oklch(84% 0 89.9)",
+          "oklch(95% 0 89.9)"
+        ]
+      },
+      "stock": {
+        "role": "neutral",
+        "displayName": "Warm Stock Grey",
+        "canonical": "#f3f1ed",
+        "oklch": "oklch(95.9% 0.006 84.6)",
+        "tonalRamp": [
+          "oklch(15% 0.006 84.6)",
+          "oklch(25% 0.006 84.6)",
+          "oklch(36% 0.006 84.6)",
+          "oklch(48% 0.006 84.6)",
+          "oklch(60% 0.006 84.6)",
+          "oklch(72% 0.006 84.6)",
+          "oklch(84% 0.002 84.6)",
+          "oklch(95% 0.002 84.6)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e2ddd6",
+        "oklch": "oklch(90% 0.011 76.6)",
+        "tonalRamp": [
+          "oklch(15% 0.011 76.6)",
+          "oklch(25% 0.011 76.6)",
+          "oklch(36% 0.011 76.6)",
+          "oklch(48% 0.011 76.6)",
+          "oklch(60% 0.011 76.6)",
+          "oklch(72% 0.011 76.6)",
+          "oklch(84% 0.004 76.6)",
+          "oklch(95% 0.004 76.6)"
+        ]
+      },
+      "roast": {
+        "role": "neutral",
+        "displayName": "Roast Field",
+        "canonical": "#15110e",
+        "oklch": "oklch(18.1% 0.009 59)",
+        "tonalRamp": [
+          "oklch(15% 0.009 59)",
+          "oklch(25% 0.009 59)",
+          "oklch(36% 0.009 59)",
+          "oklch(48% 0.009 59)",
+          "oklch(60% 0.009 59)",
+          "oklch(72% 0.009 59)",
+          "oklch(84% 0.003 59)",
+          "oklch(95% 0.003 59)"
+        ]
+      },
+      "on-roast": {
+        "role": "neutral",
+        "displayName": "On Roast",
+        "canonical": "#f5efe8",
+        "oklch": "oklch(95.5% 0.011 71.9)",
+        "tonalRamp": [
+          "oklch(15% 0.011 71.9)",
+          "oklch(25% 0.011 71.9)",
+          "oklch(36% 0.011 71.9)",
+          "oklch(48% 0.011 71.9)",
+          "oklch(60% 0.011 71.9)",
+          "oklch(72% 0.011 71.9)",
+          "oklch(84% 0.004 71.9)",
+          "oklch(95% 0.004 71.9)"
+        ]
+      },
+      "on-roast-2": {
+        "role": "neutral",
+        "displayName": "On Roast 2",
+        "canonical": "#c9bdb2",
+        "oklch": "oklch(80.5% 0.02 65.1)",
+        "tonalRamp": [
+          "oklch(15% 0.02 65.1)",
+          "oklch(25% 0.02 65.1)",
+          "oklch(36% 0.02 65.1)",
+          "oklch(48% 0.02 65.1)",
+          "oklch(60% 0.02 65.1)",
+          "oklch(72% 0.02 65.1)",
+          "oklch(84% 0.007 65.1)",
+          "oklch(95% 0.007 65.1)"
+        ]
+      },
+      "saffron": {
+        "role": "secondary",
+        "displayName": "Saffron",
+        "canonical": "#f2b705",
+        "oklch": "oklch(81.1% 0.166 85)",
+        "tonalRamp": [
+          "oklch(15% 0.166 85)",
+          "oklch(25% 0.166 85)",
+          "oklch(36% 0.166 85)",
+          "oklch(48% 0.166 85)",
+          "oklch(60% 0.166 85)",
+          "oklch(72% 0.166 85)",
+          "oklch(84% 0.058 85)",
+          "oklch(95% 0.058 85)"
+        ]
+      },
+      "cobalt": {
+        "role": "tertiary",
+        "displayName": "Cobalt",
+        "canonical": "#2443c7",
+        "oklch": "oklch(45.5% 0.207 266.8)",
+        "tonalRamp": [
+          "oklch(15% 0.207 266.8)",
+          "oklch(25% 0.207 266.8)",
+          "oklch(36% 0.207 266.8)",
+          "oklch(48% 0.207 266.8)",
+          "oklch(60% 0.207 266.8)",
+          "oklch(72% 0.207 266.8)",
+          "oklch(84% 0.072 266.8)",
+          "oklch(95% 0.072 266.8)"
+        ]
+      },
+      "ok": {
+        "role": "status",
+        "displayName": "Forest OK",
+        "canonical": "#1f6b45",
+        "oklch": "oklch(47.1% 0.096 157.3)",
+        "tonalRamp": [
+          "oklch(15% 0.096 157.3)",
+          "oklch(25% 0.096 157.3)",
+          "oklch(36% 0.096 157.3)",
+          "oklch(48% 0.096 157.3)",
+          "oklch(60% 0.096 157.3)",
+          "oklch(72% 0.096 157.3)",
+          "oklch(84% 0.034 157.3)",
+          "oklch(95% 0.034 157.3)"
+        ]
+      },
+      "bad": {
+        "role": "status",
+        "displayName": "Signal Red",
+        "canonical": "#c23a22",
+        "oklch": "oklch(54.7% 0.177 32.4)",
+        "tonalRamp": [
+          "oklch(15% 0.177 32.4)",
+          "oklch(25% 0.177 32.4)",
+          "oklch(36% 0.177 32.4)",
+          "oklch(48% 0.177 32.4)",
+          "oklch(60% 0.177 32.4)",
+          "oklch(72% 0.177 32.4)",
+          "oklch(84% 0.062 32.4)",
+          "oklch(95% 0.062 32.4)"
+        ]
+      },
+      "label-tomato": {
+        "role": "tertiary",
+        "displayName": "Tomato Label",
+        "canonical": "#c8321c",
+        "oklch": "oklch(54.9% 0.19 31.4)",
+        "tonalRamp": [
+          "oklch(15% 0.19 31.4)",
+          "oklch(25% 0.19 31.4)",
+          "oklch(36% 0.19 31.4)",
+          "oklch(48% 0.19 31.4)",
+          "oklch(60% 0.19 31.4)",
+          "oklch(72% 0.19 31.4)",
+          "oklch(84% 0.066 31.4)",
+          "oklch(95% 0.066 31.4)"
+        ]
+      },
+      "label-plum": {
+        "role": "tertiary",
+        "displayName": "Plum Label",
+        "canonical": "#6e2a63",
+        "oklch": "oklch(40.4% 0.121 334.3)",
+        "tonalRamp": [
+          "oklch(15% 0.121 334.3)",
+          "oklch(25% 0.121 334.3)",
+          "oklch(36% 0.121 334.3)",
+          "oklch(48% 0.121 334.3)",
+          "oklch(60% 0.121 334.3)",
+          "oklch(72% 0.121 334.3)",
+          "oklch(84% 0.042 334.3)",
+          "oklch(95% 0.042 334.3)"
+        ]
+      },
+      "label-raspberry": {
+        "role": "tertiary",
+        "displayName": "Raspberry Label",
+        "canonical": "#b8336d",
+        "oklch": "oklch(53.8% 0.176 358.3)",
+        "tonalRamp": [
+          "oklch(15% 0.176 358.3)",
+          "oklch(25% 0.176 358.3)",
+          "oklch(36% 0.176 358.3)",
+          "oklch(48% 0.176 358.3)",
+          "oklch(60% 0.176 358.3)",
+          "oklch(72% 0.176 358.3)",
+          "oklch(84% 0.061 358.3)",
+          "oklch(95% 0.061 358.3)"
+        ]
+      },
+      "label-forest": {
+        "role": "tertiary",
+        "displayName": "Forest Label",
+        "canonical": "#1f6b45",
+        "oklch": "oklch(47.1% 0.096 157.3)",
+        "tonalRamp": [
+          "oklch(15% 0.096 157.3)",
+          "oklch(25% 0.096 157.3)",
+          "oklch(36% 0.096 157.3)",
+          "oklch(48% 0.096 157.3)",
+          "oklch(60% 0.096 157.3)",
+          "oklch(72% 0.096 157.3)",
+          "oklch(84% 0.034 157.3)",
+          "oklch(95% 0.034 157.3)"
+        ]
+      },
+      "label-orange": {
+        "role": "tertiary",
+        "displayName": "Orange Label",
+        "canonical": "#f07a1a",
+        "oklch": "oklch(70.3% 0.173 52)",
+        "tonalRamp": [
+          "oklch(15% 0.173 52)",
+          "oklch(25% 0.173 52)",
+          "oklch(36% 0.173 52)",
+          "oklch(48% 0.173 52)",
+          "oklch(60% 0.173 52)",
+          "oklch(72% 0.173 52)",
+          "oklch(84% 0.061 52)",
+          "oklch(95% 0.061 52)"
+        ]
+      },
+      "label-sky": {
+        "role": "tertiary",
+        "displayName": "Sky Label",
+        "canonical": "#8cc5ea",
+        "oklch": "oklch(79.7% 0.079 237.5)",
+        "tonalRamp": [
+          "oklch(15% 0.079 237.5)",
+          "oklch(25% 0.079 237.5)",
+          "oklch(36% 0.079 237.5)",
+          "oklch(48% 0.079 237.5)",
+          "oklch(60% 0.079 237.5)",
+          "oklch(72% 0.079 237.5)",
+          "oklch(84% 0.028 237.5)",
+          "oklch(95% 0.028 237.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and the order page title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Row names, cart lines, legends, panel headings (17 to 24px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text and controls; 16px under 640px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase tracked meta rows and column heads."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All buttons, stretched caps."
+      }
+    },
+    "shadows": [
+      {
+        "name": "label-lift",
+        "value": "0 18px 30px -24px rgba(23,18,15,.45)",
+        "purpose": "Under each coffee label on the stock shelf."
+      },
+      {
+        "name": "receipt-lift",
+        "value": "0 20px 40px -30px rgba(23,18,15,.5)",
+        "purpose": "Under the sticky order receipt."
+      },
+      {
+        "name": "drawer-edge",
+        "value": "-20px 0 40px -20px rgba(0,0,0,.4)",
+        "purpose": "Leading edge of the cart drawer."
+      },
+      {
+        "name": "toast-lift",
+        "value": "0 14px 30px -12px rgba(0,0,0,.5)",
+        "purpose": "Add-to-cart toast."
+      },
+      {
+        "name": "focus-glow",
+        "value": "0 0 0 3px rgba(36,67,199,.35)",
+        "purpose": "Input focus, paired with ink border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-house",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "All transitions and keyframes."
+      },
+      {
+        "name": "duration-state",
+        "value": "200ms",
+        "purpose": "Hover and state colour changes, button press."
+      },
+      {
+        "name": "duration-scrim",
+        "value": "300ms",
+        "purpose": "Drawer scrim fade."
+      },
+      {
+        "name": "duration-slide",
+        "value": "450ms",
+        "purpose": "Drawer panel and toast slide."
+      },
+      {
+        "name": "count-bump",
+        "value": "500ms",
+        "purpose": "Cart count scales to 1.45 and back on add."
+      },
+      {
+        "name": "stamp-in",
+        "value": "1800ms",
+        "purpose": "\"W koszyku\" stamp slams onto a label after add, then fades."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations collapse under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "labels-2up",
+        "value": "1180px"
+      },
+      {
+        "name": "single-column",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Dark Button",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "Default action: add to cart, checkout, return. Ink block, stretched caps.",
+      "html": "<button class=\"ds-btn-dark\">Do koszyka</button>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-btn-dark{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border:2px solid transparent;border-radius:0;font:800 15px/1 \"Anybody\",\"Figtree\",sans-serif;font-stretch:118%;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;transition:background-color .2s cubic-bezier(.16,1,.3,1),color .2s cubic-bezier(.16,1,.3,1),border-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1);background:#17120f;color:#fff} .ds-btn-dark:hover{background:#3a2d24} .ds-btn-dark:active{transform:translateY(1px)} .ds-btn-dark:focus-visible{outline:3px solid #2443c7;outline-offset:3px;}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Primary action on the dark roast field; hover fills saffron.",
+      "html": "<div class=\"ds-dark\"><button class=\"ds-btn-light\">Wybierz kawę</button></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-dark{background:#15110e;padding:24px} .ds-btn-light{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border:2px solid transparent;border-radius:0;font:800 15px/1 \"Anybody\",\"Figtree\",sans-serif;font-stretch:118%;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;transition:background-color .2s cubic-bezier(.16,1,.3,1),color .2s cubic-bezier(.16,1,.3,1),border-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1);background:#fff;color:#17120f} .ds-btn-light:hover{background:#f2b705} .ds-btn-light:active{transform:translateY(1px)} .ds-btn-light:focus-visible{outline:3px solid #2443c7;outline-offset:3px;}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on the dark roast field.",
+      "html": "<div class=\"ds-dark\"><button class=\"ds-btn-line\">Jak palimy</button></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-dark{background:#15110e;padding:24px} .ds-btn-line{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border:2px solid transparent;border-radius:0;font:800 15px/1 \"Anybody\",\"Figtree\",sans-serif;font-stretch:118%;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;transition:background-color .2s cubic-bezier(.16,1,.3,1),color .2s cubic-bezier(.16,1,.3,1),border-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1);background:transparent;color:#fff;border-color:rgba(255,255,255,.7)} .ds-btn-line:hover{background:#fff;color:#17120f} .ds-btn-line:focus-visible{outline:3px solid #2443c7;outline-offset:3px;}"
+    },
+    {
+      "name": "Filter Chips",
+      "kind": "chip",
+      "refersTo": "filter-chip",
+      "description": "Square bordered filters; active fills ink.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-chip is-on\" aria-pressed=\"true\">Wszystkie</button><button class=\"ds-chip\" aria-pressed=\"false\">Przelew</button><button class=\"ds-chip\" aria-pressed=\"false\">Espresso</button></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-filters{display:flex;flex-wrap:wrap;gap:8px;background:#f3f1ed;padding:16px} .ds-chip{min-height:44px;padding:0 18px;border:2px solid #17120f;background:transparent;color:#17120f;font:700 15px/1 \"Figtree\",system-ui,sans-serif;cursor:pointer;transition:background-color .2s,color .2s} .ds-chip:hover{background:#fff} .ds-chip.is-on{background:#17120f;color:#fff} .ds-chip:focus-visible{outline:3px solid #2443c7;outline-offset:3px;}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square 52px field, hairline at rest, ink border plus cobalt glow on focus.",
+      "html": "<label class=\"ds-field\"><span>E-mail</span><input type=\"email\" placeholder=\"ty@example.pl\"></label>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-field{display:grid;gap:6px;max-width:320px;font-family:\"Figtree\",system-ui,sans-serif;color:#17120f} .ds-field span{font-weight:700;font-size:14px} .ds-field input{min-height:52px;padding:0 14px;border:2px solid #e2ddd6;background:#fff;border-radius:0;font:16px \"Figtree\",system-ui,sans-serif;color:#17120f} .ds-field input:hover{border-color:#6f6560} .ds-field input:focus{border-color:#17120f;outline:none;box-shadow:0 0 0 3px rgba(36,67,199,.35)}"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "cart-button",
+      "description": "Sticky white bar: stretched wordmark, underline-bar links, ink cart block with saffron count.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-logo\" href=\"#\">TRZASK<span>palarnia</span></a><nav class=\"ds-nav\"><a href=\"#\">Kawy</a><a href=\"#\">Palenie</a><a href=\"#\">Dostawa</a></nav><button class=\"ds-cart\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 7h12l-1 13H7L6 7Z\"/><path d=\"M9 7V5.5a3 3 0 0 1 6 0V7\"/></svg>Koszyk<b>2</b></button></header>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-top{display:flex;align-items:center;gap:28px;height:68px;padding:0 24px;background:#fff;border-bottom:1px solid #e2ddd6;color:#17120f;font-family:\"Figtree\",system-ui,sans-serif} .ds-logo{font:900 26px/1 \"Anybody\",sans-serif;font-stretch:150%;letter-spacing:-.02em;text-decoration:none;color:inherit;display:flex;align-items:baseline;gap:8px} .ds-logo span{font:600 12px/1 \"Figtree\",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6f6560} .ds-nav{display:flex;gap:28px;margin-left:auto} .ds-nav a{font-weight:600;font-size:15px;text-decoration:none;color:inherit;padding:6px 0;border-bottom:2px solid transparent} .ds-nav a:hover{border-color:#17120f} .ds-nav a:focus-visible,.ds-cart:focus-visible{outline:3px solid #2443c7;outline-offset:3px;} .ds-cart{display:flex;align-items:center;gap:10px;height:44px;padding:0 14px 0 12px;background:#17120f;color:#fff;border:0;font:700 15px \"Figtree\",sans-serif;cursor:pointer} .ds-cart b{min-width:24px;height:24px;padding:0 6px;display:grid;place-items:center;background:#f2b705;color:#17120f;font:800 13px/1 \"Figtree\",sans-serif;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Coffee Label",
+      "kind": "card",
+      "refersTo": "coffee-label",
+      "description": "Signature: full colour field with rotated roast stamp, container-sized stretched name, roast squares, perforated edge into the buy panel.",
+      "html": "<article class=\"ds-lbl\" style=\"--lc:#2443c7\"><div class=\"ds-lbl__face\"><p class=\"ds-stamp\"><span>Wypalone</span><b>8.10</b></p><h3>Kolumbia</h3><p class=\"ds-o\">Huila · San Agustín · myta</p><p class=\"ds-n\">karmel / czerwone jabłko / kakao</p><div class=\"ds-meta\"><span class=\"ds-roast\"><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i></span><span>Przelew i espresso</span></div></div><div class=\"ds-lbl__buy\"><button class=\"ds-add\">Do koszyka</button></div></article>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-lbl{width:280px;background:#fff;box-shadow:0 18px 30px -24px rgba(23,18,15,.45);font-family:\"Figtree\",system-ui,sans-serif;container-type:inline-size} .ds-lbl__face{background:var(--lc);color:#fff;padding:22px 20px;min-height:300px;display:flex;flex-direction:column} .ds-stamp{align-self:flex-end;display:flex;flex-direction:column;align-items:flex-end;border:2px solid currentColor;padding:5px 9px 6px;transform:rotate(5deg);line-height:1;margin:0} .ds-stamp span{font:700 10px/1 \"Figtree\",sans-serif;letter-spacing:.14em;text-transform:uppercase} .ds-stamp b{font:900 20px/1 \"Anybody\",sans-serif;font-stretch:125%;margin-top:3px} .ds-lbl h3{font:900 10.6cqi/.92 \"Anybody\",sans-serif;font-stretch:118%;text-transform:uppercase;margin:auto 0 0;padding-top:28px} .ds-o{font-weight:700;font-size:15px;margin:12px 0 0} .ds-n{font-size:15px;margin:4px 0 0} .ds-meta{display:flex;justify-content:space-between;gap:8px;margin-top:18px;padding-top:14px;border-top:2px solid currentColor;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em} .ds-roast{display:flex;gap:3px} .ds-roast i{width:14px;height:14px;border:2px solid currentColor} .ds-roast i.on{background:currentColor} .ds-lbl__buy{position:relative;padding:22px 20px 18px} .ds-lbl__buy::before{content:\"\";position:absolute;left:0;right:0;top:-5px;height:10px;background:radial-gradient(circle at 5px 5px,#fff 3px,transparent 3.5px) 0 0/12px 10px repeat-x} .ds-add{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:52px;padding:0 26px;border:2px solid transparent;border-radius:0;font:800 15px/1 \"Anybody\",\"Figtree\",sans-serif;font-stretch:118%;text-transform:uppercase;letter-spacing:.02em;cursor:pointer;transition:background-color .2s cubic-bezier(.16,1,.3,1),color .2s cubic-bezier(.16,1,.3,1),border-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1);background:#17120f;color:#fff} .ds-add:hover{background:#3a2d24} .ds-add:focus-visible{outline:3px solid #2443c7;outline-offset:3px;}"
+    },
+    {
+      "name": "Delivery Rows",
+      "kind": "custom",
+      "refersTo": "data-rows",
+      "description": "Ink-ruled data table with stretched-caps row names and a saffron highlight row for the free threshold.",
+      "html": "<div class=\"ds-rows\"><div class=\"ds-row\"><b>Paczkomat InPost</b><span>zwykle u Ciebie w sobotę</span><em>12,99 zł</em></div><div class=\"ds-row\"><b>Kurier DPD</b><span>1–2 dni robocze</span><em>16,99 zł</em></div><div class=\"ds-row ds-row--free\"><b>Od 120 zł</b><span>paczkomat i kurier gratis</span><em>0 zł</em></div></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap'); .ds-rows{border-top:3px solid #17120f;color:#17120f;font-family:\"Figtree\",system-ui,sans-serif;font-variant-numeric:tabular-nums;padding:0 16px} .ds-row{display:grid;grid-template-columns:1.1fr 2fr auto;gap:16px 24px;padding:22px 0;border-bottom:1px solid #e2ddd6;align-items:baseline} .ds-row b{font:900 20px/1.1 \"Anybody\",sans-serif;font-stretch:118%;text-transform:uppercase} .ds-row span{color:#4a403a} .ds-row em{font-style:normal;font-weight:800;font-size:18px} .ds-row--free{background:#f2b705;margin:0 -16px;padding:22px 16px;border-bottom:0} .ds-row--free span{color:#17120f}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Bag Label",
+    "overview": "Every surface is printed matter from a roastery: white bag stock, roast-black ink, and one saturated label colour per coffee. The product grid is not a grid of cards; it is a shelf of labels, each a full colour field carrying its name in expanded black caps, an ink stamp with the roast date, and a perforated tear-off edge where the buying controls begin. Around the labels the system stays near-monochrome so the label colours are the only chroma on the page.\n\nType is loud and square: Anybody at weight 900, stretched wide and set in caps, does all headline work; Figtree carries reading text and controls at normal width. Corners are square everywhere. Structure comes from ink rules (3px and 6px tops, 2px frames, 1px and dashed dividers) rather than boxes and shadows. The cart is a waybill (\"List przewozowy\") with sender/recipient columns and a barcode; the order confirmation is a stamp. Data (prices, weights, brew ratios) is set in tables with tabular numerals.\n\nThe dark roast field (photo hero, roasting section, footer) is the one deep surface; it sits against white paper and warm grey stock sections that alternate down the page.",
+    "keyCharacteristics": [
+      "One full-saturation colour field per coffee; neutrals everywhere else.",
+      "Anybody 900, expanded 118 to 150 percent width, uppercase, for every heading and button.",
+      "Square corners without exception (0px).",
+      "Rotated ink stamps carry dates and confirmations.",
+      "Ink rules and tables, not cards, organise information.",
+      "Saffron is the single utility highlight outside the labels."
+    ],
+    "rules": [
+      {
+        "name": "The One Label, One Colour Rule",
+        "body": "A coffee owns exactly one hue, used as a full flat field on its label and as its chip in the cart. No gradients, tints or second colours inside a label.",
+        "section": "colors"
+      },
+      {
+        "name": "The Labels Carry the Chroma Rule",
+        "body": "Outside the label faces the page is ink, paper, stock and roast. Saffron is the only exception and it marks utility (count, highlight, free threshold), never decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Stretched Caps Rule",
+        "body": "Every heading, legend, product name and button is Anybody 900 (800 for buttons) in uppercase with width stretched to 118 percent or more. Figtree never sets a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Prices, quantities, sums, brew ratios and the receipt use tabular numerals so columns align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper Lift Rule",
+        "body": "Shadows are soft and pulled in with negative spread, used only for objects that physically sit on the page (label, receipt, drawer, toast). No shadow on buttons, inputs or sections.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give every new coffee exactly one label colour as a flat full field, with ink text on light hues and white text on dark hues.",
+      "**Do** set every heading, legend and button in Anybody 900/800 caps with stretched width (118 percent or more).",
+      "**Do** keep all corners at 0px and build structure from ink rules: 3px ink top on tables, 2px ink frames on controls, 1px hairline or dashed dividers between rows.",
+      "**Do** show the roast date as a rotated ink stamp wherever a coffee appears.",
+      "**Do** use tabular numerals for prices, weights, sums and ratios.",
+      "**Do** use the house ease cubic-bezier(.16,1,.3,1) for state changes (.2s) and sliding surfaces (.45s), and honour reduced motion.",
+      "**Do** use the 3px cobalt outline for keyboard focus everywhere."
+    ],
+    "donts": [
+      "**Don't** round corners on any control, panel or image.",
+      "**Don't** put product information in white cards on a beige grid; coffees are colour-field labels.",
+      "**Don't** introduce colour outside the label palette, saffron and the status pair; no decorative gradients (the only gradients are the hero photo scrim and the perforation dots).",
+      "**Don't** use hard or offset shadows; lifts are soft and negative-spread, reserved for label, receipt, drawer and toast.",
+      "**Don't** set saffron or other light label hues as text on white.",
+      "**Don't** set headings in Figtree or at normal width."
+    ]
+  }
+}
