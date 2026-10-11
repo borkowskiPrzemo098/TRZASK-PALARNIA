@@ -28,6 +28,7 @@
       notes: ['panela', 'wiśnia', 'kakao'], p250: 49, p1000: 169, c: '#8cc5ea', ink: 'dark',
       alt: '1500–1800 m', variety: 'caturra', cup: 'Kofeinę usunięto naturalnie octanem etylu z trzciny cukrowej. Smakuje jak kawa, nie jak kompromis.' }
   ];
+  var PHOTOS = {"etiopia":"1447933601403-0c6688de566e","kenia":"1521302080334-4bebac2763a6","kolumbia":"1580933073521-dc49ac0d4e6a","gwatemala":"1587734195503-904fca47e0e9","rwanda":"1514432324607-a09d9b4aefdd","brazylia":"1497935586351-b67a49e012bf","mlyn":"1442512595331-e89e73853f31","decaf":"1509042239860-f550ce710b93"};
   var GRINDS = ['Ziarno', 'Drip / przelew', 'Espresso', 'Aeropress', 'French press', 'Moka'];
   var ROAST_WORDS = ['', 'jasne', 'średnio-jasne', 'średnie', 'ciemne'];
   var FREE_FROM = 120;
@@ -165,6 +166,7 @@
     labels.innerHTML = COFFEES.map(function (c) {
       var big = c.short || c.name;
       return '<article class="lbl lbl--' + c.ink + '" style="--lc:' + c.c + '" data-use="' + c.use.join(' ') + '" id="k-' + c.id + '">' +
+        '<div class="lbl__photo"><img src="https://images.unsplash.com/photo-' + PHOTOS[c.id] + '?auto=format&fit=crop&w=640&h=440&q=70" alt="' + (c.short || c.name) + ' — zdjęcie poglądowe" loading="lazy" width="640" height="440"></div>' +
         '<div class="lbl__face">' +
           '<p class="lbl__stamp" aria-label="Data palenia"><span>Wypalone</span><b>' + fmt(roasted) + '</b></p>' +
           '<h3 class="lbl__name">' + big + '</h3>' +
