@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zamówienie — TRZASK palarnia</title>
+<meta name="theme-color" content="#15110e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body class="page-order">
+<header class="top">
+  <div class="top__in">
+    <a class="logo" href="index.html" aria-label="TRZASK — wróć do sklepu">TRZASK<span>palarnia</span></a>
+    <a class="backlink" href="index.html#kawy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>Kawy</a>
+  </div>
+</header>
+
+<main class="order wrap">
+  <h1>Zamówienie</h1>
+  <p class="order__demo">Sklep demonstracyjny. Formularz działa, ale nic nie zostanie wysłane ani pobrane.</p>
+
+  <div class="order__grid" data-order>
+    <form class="checkout" id="checkout" novalidate>
+      <fieldset>
+        <legend>Dostawa</legend>
+        <div class="choice" role="radiogroup" aria-label="Sposób dostawy">
+          <label><input type="radio" name="ship" value="inpost" checked><span><b>Paczkomat InPost</b><small>sobota</small></span><em data-ship-price="inpost">12,99 zł</em></label>
+          <label><input type="radio" name="ship" value="dpd"><span><b>Kurier DPD</b><small>1–2 dni robocze</small></span><em data-ship-price="dpd">16,99 zł</em></label>
+          <label><input type="radio" name="ship" value="pickup"><span><b>Odbiór w&nbsp;palarni</b><small>Księży Młyn, pt–sb</small></span><em>0 zł</em></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Twoje dane</legend>
+        <div class="fields">
+          <label class="field"><span>Imię i&nbsp;nazwisko</span><input name="name" autocomplete="name" required></label>
+          <label class="field"><span>E-mail</span><input name="email" type="email" autocomplete="email" required></label>
+          <label class="field"><span>Telefon</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+          <label class="field field--wide" data-addr><span>Ulica i&nbsp;numer</span><input name="street" autocomplete="street-address" required></label>
+          <label class="field" data-addr><span>Kod pocztowy</span><input name="zip" autocomplete="postal-code" inputmode="numeric" placeholder="00-000" pattern="\d{2}-\d{3}" required></label>
+          <label class="field" data-addr><span>Miasto</span><input name="city" autocomplete="address-level2" required></label>
+          <label class="field field--wide" data-locker><span>Kod paczkomatu</span><input name="locker" placeholder="np. LOD123M" required></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Płatność</legend>
+        <div class="choice choice--row" role="radiogroup" aria-label="Płatność">
+          <label><input type="radio" name="pay" value="blik" checked><span><b>BLIK</b></span></label>
+          <label><input type="radio" name="pay" value="przelew"><span><b>Szybki przelew</b></span></label>
+          <label><input type="radio" name="pay" value="karta"><span><b>Karta</b></span></label>
+        </div>
+      </fieldset>
+
+      <label class="check"><input type="checkbox" name="terms" required><span>Akceptuję regulamin sklepu demonstracyjnego.</span></label>
+      <p class="form-error" data-form-error role="alert"></p>
+      <button class="btn btn--dark btn--wide" type="submit" data-submit>Zamawiam · <b data-pay-total></b></button>
+    </form>
+
+    <aside class="receipt" aria-labelledby="rc-h">
+      <h2 id="rc-h">Twoje kawy</h2>
+      <ul class="receipt__lines" data-receipt></ul>
+      <dl class="sum">
+        <div><dt>Wartość kaw</dt><dd data-subtotal>0,00 zł</dd></div>
+        <div><dt>Dostawa</dt><dd data-shipping>0,00 zł</dd></div>
+        <div class="sum__total"><dt>Razem</dt><dd data-total>0,00 zł</dd></div>
+      </dl>
+      <p class="receipt__note">Palimy w&nbsp;czwartek, wysyłamy w&nbsp;piątek. Data palenia będzie na każdej torebce.</p>
+    </aside>
+  </div>
+
+  <div class="order__empty" data-order-empty hidden>
+    <p>Koszyk jest pusty, więc nie ma czego zamawiać.</p>
+    <a class="btn btn--dark" href="index.html#kawy">Wybierz kawę</a>
+  </div>
+
+  <div class="done" data-done hidden tabindex="-1">
+    <p class="stamp stamp--done"><span>Przyjęte</span><b data-done-no>—</b></p>
+    <h2>Dziękujemy, zamówienie jest w&nbsp;kolejce do palenia</h2>
+    <p data-done-text></p>
+    <a class="btn btn--dark" href="index.html">Wróć do sklepu</a>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="logo logo--foot">TRZASK<span>palarnia</span></p>
+    <p class="foot__demo">Projekt portfolio PBDesign. Zamówienia nie są realizowane, a&nbsp;dane nie są nigdzie wysyłane.</p>
+  </div>
+</footer>
+<script src="app.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TRZASK — palarnia kawy, Łódź</title>
+<meta name="description" content="Mała palarnia kawy z Księżego Młyna w Łodzi. Palimy co czwartek, wysyłamy w 48 godzin od wypalenia. Projekt portfolio — sklep demonstracyjny.">
+<meta name="theme-color" content="#15110e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+<!--
+THESIS: a roastery shop where every coffee is its own printed bag label in a full colour field, with the roast date stamped on it; refuses the beige product-grid-with-white-cards template.
+OWN-WORLD: white bag stock, roast-black ink, one saturated label colour per coffee (saffron, tomato, cobalt, forest, plum, raspberry, orange, sky); Anybody expanded black caps, Figtree body; square corners, rotated ink stamps, perforated label edges.
+STORY: visitor sees this week's roast date, picks a coffee label, sets weight and grind, adds in two taps, checks the waybill-style cart, finishes a demo order.
+FIRST VIEWPORT: full-bleed dark photo of coffee and beans; headline "Palone w czwartek" left on the dark field at display scale; roast date stamp + primary CTA "Wybierz kawę"; solid white header with cart count.
+FORM: label-system direction, candidate 3 of 7; seed key 0654ef21.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#kawy">Przejdź do kaw</a>
+
+<header class="top">
+  <div class="top__in">
+    <a class="logo" href="#" aria-label="TRZASK — strona główna">TRZASK<span>palarnia</span></a>
+    <nav class="nav" aria-label="Główna">
+      <a href="#kawy">Kawy</a>
+      <a href="#palenie">Palenie</a>
+      <a href="#parzenie">Parzenie</a>
+      <a href="#dostawa">Dostawa</a>
+    </nav>
+    <button class="cartbtn" type="button" data-open-cart aria-label="Koszyk">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/></svg>
+      <span class="cartbtn__label">Koszyk</span>
+      <b class="cartbtn__count" data-cart-count>0</b>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-h">
+    <img class="hero__img" src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?auto=format&fit=crop&w=2200&q=78" alt="Ziarna kawy wpadające do filiżanki na ciemnym tle" fetchpriority="high">
+    <div class="hero__in">
+      <p class="stamp stamp--hero" aria-label="Ostatnie palenie">
+        <span>Wypalone</span><b data-roast-date>—</b>
+      </p>
+      <h1 id="hero-h">Palone w&nbsp;czwartek. U&nbsp;Ciebie w&nbsp;sobotę.</h1>
+      <p class="hero__lead">Mała palarnia z&nbsp;Księżego Młyna w&nbsp;Łodzi. Co tydzień palimy krótkie partie i&nbsp;wysyłamy je w&nbsp;ciągu 48 godzin od wypalenia.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="#kawy">Wybierz kawę</a>
+        <a class="btn btn--line" href="#palenie">Jak palimy</a>
+      </div>
+    </div>
+    <ul class="hero__facts">
+      <li><b data-next-roast>—</b><span>następne palenie</span></li>
+      <li><b>od 120&nbsp;zł</b><span>darmowa dostawa</span></li>
+      <li><b>8 kaw</b><span>w tym tygodniu</span></li>
+    </ul>
+  </section>
+
+  <section class="shelf" id="kawy" aria-labelledby="kawy-h">
+    <div class="wrap">
+      <div class="shelf__head">
+        <h2 id="kawy-h">Palone w&nbsp;tym tygodniu</h2>
+        <div class="filters" role="group" aria-label="Filtruj kawy">
+          <button type="button" class="is-on" data-filter="all" aria-pressed="true">Wszystkie</button>
+          <button type="button" data-filter="przelew" aria-pressed="false">Przelew</button>
+          <button type="button" data-filter="espresso" aria-pressed="false">Espresso</button>
+          <button type="button" data-filter="decaf" aria-pressed="false">Bezkofeinowa</button>
+        </div>
+      </div>
+      <div class="labels" id="labels"></div>
+    </div>
+  </section>
+
+  <section class="roast" id="palenie" aria-labelledby="palenie-h">
+    <div class="roast__photo">
+      <img src="https://images.unsplash.com/photo-1525088553748-01d6e210e00b?auto=format&fit=crop&w=1400&q=75" alt="Dłoń trzymająca świeżo wypalone ziarna nad misą" loading="lazy">
+    </div>
+    <div class="roast__text">
+      <h2 id="palenie-h">Słuchamy, kiedy ziarno pęka</h2>
+      <p>Pierwszy trzask to moment, w&nbsp;którym ziarno pod wpływem pary pęka z&nbsp;cichym dźwiękiem. Od niego liczymy rozwój palenia: kilkadziesiąt sekund dłużej to więcej czekolady, krócej to więcej owoców i&nbsp;kwasowości.</p>
+      <p>Palimy w&nbsp;każdy czwartek na 15-kilogramowym piecu, partiami po 12&nbsp;kg. Każda torebka ma na etykiecie datę palenia, a&nbsp;nie datę ważności.</p>
+      <div class="scale" aria-label="Skala palenia">
+        <div class="scale__bar">
+          <span style="--c:#b0773f"></span><span style="--c:#8a5428"></span><span style="--c:#6b3c1b"></span><span style="--c:#4b2913"></span><span style="--c:#2e1a0d"></span>
+        </div>
+        <div class="scale__legend">
+          <span>Jasne<br><small>przelew, aeropress</small></span>
+          <span>Średnie<br><small>uniwersalne</small></span>
+          <span>Ciemne<br><small>espresso z mlekiem</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brew" id="parzenie" aria-labelledby="parzenie-h">
+    <div class="wrap brew__grid">
+      <div class="brew__intro">
+        <h2 id="parzenie-h">Jak parzyć</h2>
+        <p>Nasze proporcje wyjściowe. Zmieniaj jedną rzecz naraz: najpierw mielenie, potem ilość kawy.</p>
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=72" alt="Parzenie kawy metodą przelewową w szklanym dzbanku" loading="lazy">
+      </div>
+      <div class="brew__table" role="table" aria-label="Proporcje parzenia">
+        <div class="brew__row brew__row--head" role="row"><span role="columnheader">Metoda</span><span role="columnheader">Mielenie</span><span role="columnheader">Proporcja</span><span role="columnheader">Czas</span></div>
+        <div class="brew__row" role="row"><b role="cell">Drip / V60</b><span role="cell">średnio-drobne</span><span role="cell">15 g : 250 ml</span><span role="cell">2:45–3:15</span></div>
+        <div class="brew__row" role="row"><b role="cell">Chemex</b><span role="cell">średnio-grube</span><span role="cell">30 g : 500 ml</span><span role="cell">4:00–4:30</span></div>
+        <div class="brew__row" role="row"><b role="cell">Aeropress</b><span role="cell">drobne</span><span role="cell">14 g : 200 ml</span><span role="cell">1:30–2:00</span></div>
+        <div class="brew__row" role="row"><b role="cell">Espresso</b><span role="cell">bardzo drobne</span><span role="cell">18 g : 36 g</span><span role="cell">27–30 s</span></div>
+        <div class="brew__row" role="row"><b role="cell">French press</b><span role="cell">grube</span><span role="cell">30 g : 500 ml</span><span role="cell">4:00</span></div>
+        <div class="brew__row" role="row"><b role="cell">Moka</b><span role="cell">drobne</span><span role="cell">do pełna sitka</span><span role="cell">do bulgotania</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ship" id="dostawa" aria-labelledby="dostawa-h">
+    <div class="wrap">
+      <h2 id="dostawa-h">Dostawa i&nbsp;odbiór</h2>
+      <div class="ship__rows">
+        <div class="ship__row"><b>Paczkomat InPost</b><span>wysyłka w&nbsp;piątek po paleniu, zwykle u&nbsp;Ciebie w&nbsp;sobotę</span><em>12,99 zł</em></div>
+        <div class="ship__row"><b>Kurier DPD</b><span>dostawa pod drzwi w&nbsp;1–2 dni robocze</span><em>16,99 zł</em></div>
+        <div class="ship__row"><b>Odbiór w&nbsp;palarni</b><span>Księży Młyn, Łódź, piątek–sobota 10:00–18:00</span><em>0 zł</em></div>
+        <div class="ship__row ship__row--free"><b>Zamówienia od 120 zł</b><span>paczkomat i&nbsp;kurier gratis</span><em>0 zł</em></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="logo logo--foot">TRZASK<span>palarnia</span></p>
+    <p>ul. Przędzalniana 72, Księży Młyn, Łódź<br>kontakt@trzask.example · 42 000 00 00</p>
+    <p class="foot__demo">Projekt portfolio PBDesign. Sklep demonstracyjny: produkty, ceny i&nbsp;daty są przykładowe, zamówienia nie są realizowane, a&nbsp;dane nie są nigdzie wysyłane.</p>
+  </div>
+</footer>
+
+<div class="drawer" id="cart" aria-hidden="true">
+  <div class="drawer__scrim" data-close-cart></div>
+  <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-h" tabindex="-1">
+    <div class="drawer__head">
+      <h2 id="cart-h">List przewozowy</h2>
+      <button class="iconbtn" type="button" data-close-cart aria-label="Zamknij koszyk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <div class="freebar" data-freebar><p data-free-text></p><div class="freebar__track"><span data-free-fill></span></div></div>
+    <ul class="lines" data-lines></ul>
+    <div class="drawer__empty" data-empty>
+      <p>Koszyk jest pusty.</p>
+      <button class="btn btn--dark" type="button" data-close-cart data-goto="#kawy">Wybierz kawę</button>
+    </div>
+    <div class="drawer__foot" data-foot>
+      <dl class="sum">
+        <div><dt>Wartość kaw</dt><dd data-subtotal>0,00 zł</dd></div>
+        <div><dt>Dostawa</dt><dd data-shipping>od 12,99 zł</dd></div>
+      </dl>
+      <a class="btn btn--dark btn--wide" href="zamowienie.html">Przejdź do zamówienia</a>
+    </div>
+  </aside>
+</div>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
