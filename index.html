@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <!--
@@ -43,21 +43,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <section class="hero" aria-labelledby="hero-h">
     <img class="hero__img" src="https://images.unsplash.com/photo-1610632380989-680fe40816c6?auto=format&fit=crop&w=2200&q=78" alt="Ziarna kawy wpadające do filiżanki na ciemnym tle" fetchpriority="high">
     <div class="hero__in">
-      <p class="stamp stamp--hero" aria-label="Ostatnie palenie">
-        <span>Wypalone</span><b data-roast-date>—</b>
-      </p>
       <h1 id="hero-h">Palone w&nbsp;czwartek. U&nbsp;Ciebie w&nbsp;sobotę.</h1>
-      <p class="hero__lead">Mała palarnia z&nbsp;Księżego Młyna w&nbsp;Łodzi. Co tydzień palimy krótkie partie i&nbsp;wysyłamy je w&nbsp;ciągu 48 godzin od wypalenia.</p>
+      <p class="hero__lead">Mała palarnia z&nbsp;Księżego Młyna w&nbsp;Łodzi. Co tydzień palimy krótkie partie i&nbsp;wysyłamy je w&nbsp;ciągu 48 godzin od wypalenia. Od 120&nbsp;zł dostawa gratis.</p>
       <div class="hero__cta">
         <a class="btn btn--light" href="#kawy">Wybierz kawę</a>
         <a class="btn btn--line" href="#palenie">Jak palimy</a>
       </div>
     </div>
-    <ul class="hero__facts">
-      <li><b data-next-roast>—</b><span>następne palenie</span></li>
-      <li><b>od 120&nbsp;zł</b><span>darmowa dostawa</span></li>
-      <li><b>8 kaw</b><span>w tym tygodniu</span></li>
-    </ul>
+    <p class="stamp stamp--hero"><span>Wypalone</span><b data-roast-date>—</b><small>następne: <em data-next-roast>—</em></small></p>
   </section>
 
   <section class="shelf" id="kawy" aria-labelledby="kawy-h">
@@ -132,7 +125,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap foot__in">
     <p class="logo logo--foot">TRZASK<span>palarnia</span></p>
     <p>ul. Przędzalniana 72, Księży Młyn, Łódź<br>kontakt@trzask.example · 42 000 00 00</p>
-    <p class="foot__demo">Projekt portfolio PBDesign. Sklep demonstracyjny: produkty, ceny i&nbsp;daty są przykładowe, zamówienia nie są realizowane, a&nbsp;dane nie są nigdzie wysyłane.</p>
+    <p class="foot__demo">Projekt portfolio PBDesign. Sklep demonstracyjny: produkty, ceny, daty i&nbsp;adres są przykładowe, zamówienia nie są realizowane, a&nbsp;dane nie są nigdzie wysyłane.</p>
   </div>
 </footer>
 
@@ -140,10 +133,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="drawer__scrim" data-close-cart></div>
   <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-h" tabindex="-1">
     <div class="drawer__head">
-      <h2 id="cart-h">List przewozowy</h2>
+      <div><h2 id="cart-h">List przewozowy</h2><p class="wb__no" data-wb-no>—</p></div>
       <button class="iconbtn" type="button" data-close-cart aria-label="Zamknij koszyk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
     </div>
     <div class="freebar" data-freebar><p data-free-text></p><div class="freebar__track"><span data-free-fill></span></div></div>
+    <div class="wb__parties" data-wb-parties><div><span>Nadawca</span><b>TRZASK Palarnia</b><small>Księży Młyn, Łódź</small></div><div><span>Odbiorca</span><b>uzupełnisz w&nbsp;zamówieniu</b><small>paczkomat, kurier lub odbiór</small></div></div>
+    <div class="wb__cols" data-wb-cols aria-hidden="true"><span>Poz. / kawa</span><span>Szt.</span><span>Wartość</span></div>
     <ul class="lines" data-lines></ul>
     <div class="drawer__empty" data-empty>
       <p>Koszyk jest pusty.</p>
@@ -153,13 +148,15 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <dl class="sum">
         <div><dt>Wartość kaw</dt><dd data-subtotal>0,00 zł</dd></div>
         <div><dt>Dostawa</dt><dd data-shipping>od 12,99 zł</dd></div>
+        <div><dt>Masa netto</dt><dd data-mass>0 kg</dd></div>
       </dl>
+      <svg class="wb__bar" viewBox="0 0 200 34" preserveAspectRatio="none" aria-hidden="true" data-barcode></svg>
       <a class="btn btn--dark btn--wide" href="zamowienie.html">Przejdź do zamówienia</a>
     </div>
   </aside>
 </div>
 
 <div class="toast" role="status" aria-live="polite" data-toast></div>
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>

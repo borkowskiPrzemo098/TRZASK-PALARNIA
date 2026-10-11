@@ -7,7 +7,7 @@
       notes: ['bergamotka', 'brzoskwinia', 'jaśmin'], p250: 54, p1000: 189, c: '#f2b705', ink: 'dark',
       alt: '2100–2300 m', variety: 'heirloom', cup: 'Lekka jak herbata, kwiatowa, z długim słodkim finiszem. Najlepsza z dripa.' },
     { id: 'kenia', name: 'Kenia', origin: 'Nyeri · AA', process: 'myta', roast: 1, use: ['przelew'],
-      notes: ['czarna porzeczka', 'grejpfrut', 'trzcina'], p250: 62, p1000: 219, c: '#e0442b', ink: 'light',
+      notes: ['czarna porzeczka', 'grejpfrut', 'trzcina'], p250: 62, p1000: 219, c: '#c8321c', ink: 'light',
       alt: '1700–1900 m', variety: 'SL28, SL34', cup: 'Soczysta i wyrazista, kwasowość jak z owoców jagodowych.' },
     { id: 'kolumbia', name: 'Kolumbia', origin: 'Huila · San Agustín', process: 'myta', roast: 2, use: ['przelew', 'espresso'],
       notes: ['karmel', 'czerwone jabłko', 'kakao'], p250: 46, p1000: 159, c: '#2443c7', ink: 'light',
@@ -16,7 +16,7 @@
       notes: ['brązowy cukier', 'śliwka', 'migdał'], p250: 48, p1000: 169, c: '#6e2a63', ink: 'light',
       alt: '1500–1900 m', variety: 'bourbon, typica', cup: 'Pełna, okrągła, z ciemnymi owocami. Dobra z mlekiem i bez.' },
     { id: 'rwanda', name: 'Rwanda', origin: 'Nyamasheke', process: 'naturalna', roast: 1, use: ['przelew'],
-      notes: ['malina', 'hibiskus', 'kakao'], p250: 58, p1000: 199, c: '#e2568f', ink: 'light',
+      notes: ['malina', 'hibiskus', 'kakao'], p250: 58, p1000: 199, c: '#b8336d', ink: 'light',
       alt: '1700–1900 m', variety: 'red bourbon', cup: 'Owocowa bomba z obróbki naturalnej. Słodka, z nutą suszonych owoców.' },
     { id: 'brazylia', name: 'Brazylia', origin: 'Mogiana · Cerrado', process: 'naturalna', roast: 3, use: ['espresso'],
       notes: ['orzech laskowy', 'mleczna czekolada'], p250: 39, p1000: 129, c: '#1f6b45', ink: 'light',
@@ -48,6 +48,10 @@
   var next = new Date(roasted); next.setDate(next.getDate() + 7);
   $$('[data-roast-date]').forEach(function (el) { el.textContent = fmt(roasted); });
   $$('[data-next-roast]').forEach(function (el) { el.textContent = DAYS[4] + ' ' + fmt(next); });
+  var wbNo = 'TRZ ' + fmt(roasted).replace('.', '') + ' ' + String(1000 + Math.floor(Math.random() * 9000));
+  $$('[data-wb-no]').forEach(function (el) { el.textContent = 'Nr ' + wbNo + ' · demo'; });
+  var bc = $('[data-barcode]');
+  if (bc) { var x = 0, out = '', seed = 7; while (x < 196) { seed = (seed * 9301 + 49297) % 233280; var w = [0.7, 1.1, 1.8][seed % 3]; if ((seed >> 3) % 2) out += '<rect x="' + x + '" y="0" width="' + w + '" height="34"/>'; x += w + 0.9; } bc.innerHTML = out; }
 
   /* ---------- koszyk ---------- */
   function load() { try { var v = JSON.parse(localStorage.getItem(KEY) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; } }
@@ -76,9 +80,9 @@
   function lineHTML(l, i, editable) {
     var c = byId(l.id); if (!c) return '';
     var w = l.w === 1000 ? '1 kg' : '250 g';
-    var meta = w + ' · ' + l.g;
+    var meta = 'poz. ' + (i + 1) + ' · ' + w + ' · ' + l.g;
     var q = editable
-      ? '<div class="qty" role="group" aria-label="Ilość"><button type="button" data-dec="' + i + '" aria-label="Mniej">−</button><output>' + l.q + '</output><button type="button" data-inc="' + i + '" aria-label="Więcej">+</button></div>'
+      ? '<div class="qty" role="group" aria-label="Ilość"><button type="button" data-dec="' + i + '" aria-label="Mniej"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button><output>' + l.q + '</output><button type="button" data-inc="' + i + '" aria-label="Więcej"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button></div>'
       : '<span class="line__q">' + l.q + ' ×</span>';
     return '<li class="line" style="--lc:' + c.c + '">' +
       '<span class="line__chip" aria-hidden="true"></span>' +
@@ -95,6 +99,9 @@
     $('[data-empty]').hidden = !empty;
     $('[data-foot]').hidden = empty;
     $('[data-freebar]').hidden = empty;
+    $('[data-wb-parties]').hidden = empty; $('[data-wb-cols]').hidden = empty;
+    var kg = cart.reduce(function (s, l) { return s + l.w * l.q; }, 0) / 1000;
+    $('[data-mass]').textContent = String(kg).replace('.', ',') + ' kg';
     $('[data-shipping]').textContent = free ? '0,00 zł' : 'od ' + zl(SHIP.inpost);
     var left = FREE_FROM - sub;
     $('[data-free-text]').innerHTML = free ? '<b>Darmowa dostawa.</b> Paczkomat i kurier gratis.' : 'Brakuje <b>' + zl(left) + '</b> do darmowej dostawy.';
